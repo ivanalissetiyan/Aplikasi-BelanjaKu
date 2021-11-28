@@ -111,7 +111,7 @@
                     <a href="/index.html">Home</a>
                   </li>
                   <li class="breadcrumb-item active">
-                   Cart
+                   Keranjang
                   </li>
                 </ol>
               </nav>
@@ -255,10 +255,33 @@
               <hr />
             </div>
             <div class="col-12">
-              <h2 class="mb-4">
+              <h2 class="mb-2">
                 Informasi Pembayaran
               </h2>
             </div>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-4 col-md-2">
+            <div class="product-title">Rp.50.000</div>
+            <div class="product-subtitle">Pajak</div>
+          </div>
+          <div class="col-4 col-md-3"> 
+            <div class="product-title">Rp.100.000</div>
+            <div class="product-subtitle">Asuransi Produk</div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="product-title">Rp.560.000</div>
+            <div class="product-subtitle">Kirim ke Batam</div>
+          </div>
+           <div class="col-4 col-md-2">
+            <div class="product-title text-primary">Rp.710.000</div>
+            <div class="product-subtitle">Total</div>
+          </div>
+          <div class="col-8 col-md-3">
+            <a href="/success.html" class="btn btn-primary mt-4 px-4 btn-block">
+              Checkout Now
+            </a>
+          </div>
           </div>
         </div>
       </section>
@@ -282,41 +305,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script src="/vendor/vue/vue.js"></script>
-    <script>
-      var gallery = new Vue({
-        el: "#gallery",
-        mounted() {
-          AOS.init();
-        },
-        data: {
-          activePhoto: 0,
-          photos: [
-            {
-              id: 1,
-              url: "/images/product-detail1.jpg"
-            },
-            {
-              id: 2,
-              url: "/images/product-detail2.jpg"
-            },
-            {
-              id: 3,
-              url: "/images/product-detail3.jpg"
-            },
-            {
-              id: 4,
-              url: "/images/product-detail4.jpg"
-            },
-          ],
-        },
-        methods: {
-          changeActive(id) {
-            this.activePhoto = id;
-          }
-        }
-      });
     </script>
     <script src="/script/navbar-scroll.js"></script>
   </body>
