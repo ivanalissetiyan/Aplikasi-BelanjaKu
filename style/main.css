@@ -10341,6 +10341,19 @@ footer p {
   font-size: 16px;
   line-height: 24px;
 }
+.page-dashboard .section-content .nav-pills .nav-link {
+  font-weight: 400;
+  font-size: 18px;
+  color: #9191A9;
+  border-radius: 0px;
+}
+.page-dashboard .section-content .nav-pills .nav-link.active {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0C0D36;
+  border-bottom: 2px solid #0c0d36;
+  background: none;
+}
 
 .component-categories {
   background-color: #f4f4f4;
