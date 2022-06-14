@@ -43,12 +43,12 @@
             >
             <a
               href="/store-settings.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
               >Store Settings</a
             >
             <a
-              href="/my-account.html"
-              class="list-group-item list-group-item-action"
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action active"
               >My Account</a
             >
             <a href="/index.html" class="list-group-item list-group-item-action"
@@ -136,63 +136,69 @@
                 <div class="col-12">
                   <form action="">
                     <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label>Nama Toko</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                v-model="name"
-                                autofocus
-                              />
+                     <div class="row">
+                       <div class="row mb-2">
+                         <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="name">Your Name</label>
+                              <input type="text" class="form-control" id="name" name="name" value="Ivan Alissetiyan">
+                            </div>
+                          </div>
+                           <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="email">Your Email</label>
+                              <input type="text" class="form-control" id="email" name="email" value="ivanalissetiyan@gmail.com">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="addressOne">Alamat 1</label>
+                              <input type="text" class="form-control" id="addressOne" name="addressOne" value="Setra Duta Cemara">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="addressTwo">Alamat 2</label>
+                              <input type="text" class="form-control" id="addressTwo" name="addressTwo" value="Blok B2 No. 34">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="provinsi">Provinsi</label>
+                              <select name="provinsi" id="provinsi" class="form-control">
+                                <option value="Jawa Barat">Jawa Barat</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="kota">Kota</label>
+                              <select name="kota" id="kota" class="form-control">
+                                <option value="Bandung">Bandung</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="kodePos">Kode POS</label>
+                              <input type="text" class="form-control" id="kodePos" name="kodePos" value="123999">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="negara">Negara</label>
+                              <input type="text" class="form-control" id="negara" name="negara" value="Indonesia">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="noTelp">No Handphone</label>
+                              <input type="text" class="form-control" id="noTelp" name="noTelp" value="+628 2020 11111">
                             </div>
                         </div>
-                         <div class="col-md-6">
-                               <div class="form-group">
-                                <label>Kategori</label>
-                                <select name="category" class="form-control">
-                                  <option value="" disabled>Select Category</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div class="form-group">
-                                <label>Store Status</label>
-                                <p class="text-muted">Apakah saat ini toko Anda buka?</p>
-                                <div
-                                  class="custom-control custom-radio costum-control-inline"
-                                >
-                                  <input
-                                    type="radio"
-                                    class="custom-control-input"
-                                    name="is_store_open"
-                                    id="openStoreTrue"
-                                    value="true"
-                                  />
-                                  <label for="openStoreTrue" class="custom-control-label">
-                                  Buka
-                                  </label>
-                                </div>
-                                <div
-                                  class="custom-control custom-radio costum-control-inline"
-                                >
-                                  <input
-                                    type="radio"
-                                    class="custom-control-input"
-                                    name="is_store_open"
-                                    id="openStoreFalse"
-                                    v-model="is_store_open"
-                                    value="false"
-                                  />
-                                  <label for="openStoreFalse" class="custom-control-label">
-                                      Sementara Tutup
-                                  </label>
-                                </div>
-                                 </div>
-                            </div>
                       </div>
-                       <div class="row">
+                     </div>
+                     <div class="row">
                       <div class="col text-right">
                         <button type="submit" class="btn btn-success px-5">
                           Save Now

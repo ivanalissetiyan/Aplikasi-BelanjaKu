@@ -10459,6 +10459,15 @@ footer p {
   color: #0C0D36;
 }
 
+.card-dashboard-product {
+  margin-bottom: 15px;
+}
+.card-dashboard-product .card-body .product-title {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
 .slide-fade-enter-active {
   transition: all 0.2s ease;
 }
